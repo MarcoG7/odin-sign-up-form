@@ -13,3 +13,50 @@ body {
 
     display: flex;
 }
+
+/* IMAGE SECTION */
+.image-section {
+    background-image: url("/assets/background_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 50%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    padding: 10px 0;
+    background-color: #33333388;
+    width: 100%;
+
+    font-family: "Kristy";
+    color: white;
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    top: 25%;
+}
+
+.title img {
+    height: 75px;
+}
+
+.credit {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+.credit a {
+    color: aqua;
+}
