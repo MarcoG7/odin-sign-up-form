@@ -21,6 +21,7 @@ body {
     background-repeat: no-repeat;
 
     width: 50%;
+    min-width: 220px;
     box-sizing: border-box;
 
     display: flex;
@@ -60,3 +61,5 @@ body {
 .credit a {
     color: aqua;
 }
+
+/* FORM SECTION */
