@@ -40,9 +40,6 @@ body {
     background-color: #33333388;
     width: 100%;
 
-    font-family: "Kristy";
-    color: white;
-
     display: flex;
     gap: 20px;
     align-items: center;
@@ -50,6 +47,15 @@ body {
 
     position: relative;
     top: 25%;
+}
+
+.title h1 {
+    color: white;
+    font-family: "Kristy";
+    padding: 0;
+    margin: 0;
+    font-size: 48px;
+    letter-spacing: 3px;
 }
 
 .title img {
