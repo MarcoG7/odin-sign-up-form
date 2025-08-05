@@ -4,6 +4,11 @@
         url("/fonts/kirsty_rg-webfont.woff") format("woff");
 }
 
+:root {
+    --left-offset: 40px;
+    --right-offset: max(200px, 30%);
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -63,3 +68,103 @@ body {
 }
 
 /* FORM SECTION */
+.form-section {
+    background-color: azure;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.intro {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: justify;
+
+    padding-left: var(--left-offset);
+    padding-right: var(--right-offset);
+}
+
+.italic {
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px var(--right-offset) 20px var(--left-offset);
+}
+
+.heading {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+
+    flex-basis: 100%;
+}
+
+.field {
+    height: 45px;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - 10px);
+}
+
+input {
+    height: 100%;
+    width: 250px;
+
+    padding: 2px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    font-variant-caps: all-petite-caps;
+    letter-spacing: 1px;
+    color: gray;
+}
+
+button {
+    margin-top: 10px;
+    margin-left: var(--left-offset);
+    margin-right: var(--right-offset);
+    padding: 5px 10px;
+    height: 40px;
+    min-width: 150px;
+    width: 50%;
+    max-width: 200px;
+
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+
+    background-color: forestgreen;
+    border: none;
+    border-radius: 10px;
+}
+
+.login-text {
+    margin-left: var(--left-offset);
+    margin-right: var(--right-offset);
+}
+
+.login-text a {
+    color: forestgreen;
+    font-weight: bold;
+    text-decoration: none;
+}
